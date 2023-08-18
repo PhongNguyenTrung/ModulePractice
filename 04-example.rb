@@ -6,8 +6,6 @@ module Authentication
     # Password and confirmation must match {:error => "mismatch"}
     # Must be at least 8 characters long {:error => "too short"}
     # Jaro distance from any of the top 25 common passwords must be less than 0.8 {:error => "common password"}
-    # Can't contain 3 or more consecutive numbers {:error => "too many consecutive numbers"}
-    # Can't contain 3 or more repeated characters {:error => "too many repeated characters"}
 
     # Top 25 most common passwords:
     # 123456, password, 12345678, qwerty, 12345, 123456789, football, 1234, 1234567,
